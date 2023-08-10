@@ -77,8 +77,9 @@ def change_note():
             i.title = input("измените  заголовок:\n")
             i.body = input("измените  описание:\n")
             N.Note.set_date(i)
-            logic = False
-        array_notes_new.append(i)
+            array_notes_new.append(i)
+        else:
+            flag = False
 
     if flag:
         sf.write_file(array_notes_new, 'a')
