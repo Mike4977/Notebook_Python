@@ -25,3 +25,5 @@ def start():
         elif user_input == '7':
             print("Работа с записной книжкой завершена")
             work = False
+        else:
+            print("Такой команды не существует")
