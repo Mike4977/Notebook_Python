@@ -1,5 +1,4 @@
 import main_menu as ui
-
 import commands as com
 
 
@@ -8,16 +7,16 @@ def start():
     while work:
         ui.menu_console()
         user_input = input()
-        if user_input == '1':
+        if user_input == '2':
             com.show("all")
-        elif user_input == '2':
-            com.show("ID")
         elif user_input == '3':
-            com.show("date")
+            com.show("ID")
         elif user_input == '4':
+            com.show("date")
+        elif user_input == '5':
             com.show("all")
             com.change_note()
-        elif user_input == '5':
+        elif user_input == '1':
             com.add_note()
         elif user_input == '6':
             com.show("all")
